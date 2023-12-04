@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Garden Planner</title>
+    <link href = "stylesheet.css" rel="stylesheet"/>
+    <link href = "Sign.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav  style="top:0;">
+        <ul>
+            <li><a href = "Home.html">Home</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="Chat_Room.html">Chat Space</a></li>
+            <li><a href = "contactus.html">Contact Us</a></li>
+            <li><a href = "Login.html">Log in</a></li>
+        </ul>
+    </nav>
+  <SEction  style="width: 100%;HEIGHT: 91vh;">
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Create Account</h1>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <input type="text" placeholder="User Name" />
+                <label for="Climate">Climate: </label>
+                <select name="Climate" id="Climate" title="Climate">
+                <option value="mediterranean">Mediterranean</option>
+                <option value="arid-climate" selected>Arid(Desert)</option>
+                <option value="semi-arid">Semi-Arid</option>
+                </select>
+                <input type="password" placeholder="Password" />
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Sign in</h1>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <a href="#">Forgot your password?</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</SEction>
+</body>
+    <script>const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+        
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+        
+        signInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });</script>
+
+</html>

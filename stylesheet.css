@@ -1,0 +1,321 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  
+}
+
+nav
+{ 
+    background-color: #333;
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+nav ul
+{
+ width:60%;
+ display:flex;
+ justify-content: space-evenly;
+}
+nav li{
+    list-style: none;
+    font-family: pacifico;
+
+}
+
+nav li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    z-index: 10;
+    cursor: pointer;
+
+  }
+ nav li a:hover {
+  background-color: #111;
+}
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    nav {
+        height: auto; /* Remove fixed height */
+    }
+
+    nav ul {
+        width: 100%; /* Expand the menu to full width */
+        flex-direction: column; /* Stack the list items vertically */
+        align-items: center;
+    }
+
+    nav li {
+        padding: 10px 0; /* Adjust padding for touch-friendly spacing */
+    }
+}
+
+.image-container{
+    background-image: url("chris-orcutt-DmEX6_oQI-U-unsplash.jpg");
+    background-size: cover;
+    padding-top: 4%;
+    width : 100%;
+    height : 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.image-container img{
+    width : 100%;
+    height : 100%;
+ 
+}
+
+.textimg{
+
+    font-weight: 600;
+    font-family: pacifico;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(226, 223, 223);
+}
+
+
+
+
+
+.abtus{
+    background-color: rgb(58, 66, 47);
+    /*width:100%;
+    height:100vh;*/
+    overflow: hidden;
+} 
+.heading h1{
+    color: rgb(130, 121, 121);
+    font-size: 55px;
+    text-align: center;
+    margin-top: 35px;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:90%;
+    margin:65px auto;
+}
+.content{
+    flex:1;
+    width:600px;
+    margin:0px 25px;
+    animation: fadeInUp 2s ease;
+}
+.content h2{
+    font-size:38px;
+    margin-bottom:20px ;
+    color:#706b6b;
+}
+.content p{
+    font-size : 24px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color:#8e8888;
+}
+.content button{
+    display: inline-block;
+    background-color: rgb(88, 87, 84);
+    color : #fff;
+    padding:12px 24px;
+    border-radius:5px;
+    font-size:20px;
+    border:none;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+.content button:hover{
+    background-color:#333;
+    transform: scale(1.1);
+}
+.abt_image{
+    flex: 1;
+    width: 600px;
+    margin:auto;
+    animation: fadeInRight 2s ease;
+
+}
+img{
+    width:100%;
+    height:auto;
+    border-radius: 10px;
+}
+
+@media screen and(max-width:768px) {
+    .heading h1{
+        font-size: 45px;
+        marging-top:30px;
+    }
+    .abtus{
+        marging:0px;
+    }
+    .container{
+        width:100%;
+        flex-direction:column ;
+        margin:0px;
+        padding:0px 40px;  
+    }
+    .content{
+        width:100%;
+        margin:35px 0px;
+    }
+    .content h2{
+        font-size : 30px;
+    }
+    .content p{
+        font: size 18px;
+        margin-bottom: 20px;
+    }
+    .content button{
+        font-size:16px;
+        padding:8px 16px;
+    }
+    .abt_image{
+        width: 100%;
+    }
+}
+@keyframes fadeInUp{
+    0%{
+        opacity:0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity:0;
+        transform: translateY(0px);
+    }
+}
+@keyframes fadeInRight{
+    0%{
+        opacity:1;
+        transform: translateX(-50px);
+    }
+    100%{
+        opacity:1;
+        transform: translateX(0px);
+    }
+}
+
+/*Footer styling*/
+.footer{
+    background-color: #333;
+}
+
+.footerContainer{
+    width:100%;
+    padding:70px 30px 20px;
+    background-color: #333;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+
+}
+.socialIcons a{
+    text-decoration: none;
+    padding : 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a{
+    font-size: 2em;
+    color: #616161;
+    opacity: 0.9;
+}
+
+/*Hover Effects on Social Media Icons */
+.socialIcons a:hover{
+    background-color: #333;
+    transition:0.5s;
+}
+
+.socialIcons a:hover i{
+    color:white;
+    transition: 0.5s;
+}
+
+.footerNav{
+    margin: 30px 0;
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content:center;
+    list-style-type: none;
+}
+
+.footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #616161;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+
+@media(max-width:700PX){
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+ /* Define the styles for the container */
+ .scrollcontainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+/* Style for each column */
+.scrollcolumn {
+    width: 23%; /* Adjust the width as needed */
+    background-color: #ccc; /* Background color for the square */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style for the image inside the column */
+.scrollcolumn img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Makes the image round */
+}
+
+/* Style for the text inside the column */
+.scrollcolumn p {
+    font-size: 20px;
+    margin: 10px 0;
+}

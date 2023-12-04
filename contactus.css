@@ -1,0 +1,97 @@
+/* Style the spacer */
+.cntus{
+    background-color:  rgb(58, 66, 47);
+}
+.spacer {
+    height: 70px; /* Adjust the height as needed */
+}
+.info-container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-container img {
+    width: 20px; /* Adjust the size of the icons as needed */
+    height: 20px;
+    margin-right: 5px; /* Add some spacing between the icon and text */ 
+}
+.image-containerr {
+    
+    width: 100%; /* Set the width to 100% */
+    height:100% ;
+    position: relative;
+}
+.responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
+.image-containerr img {
+    height: 530px;
+    width: 600px;
+    object-fit: cover; /* Maintain the image aspect ratio and cover the container */
+}
+
+.info-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.info-content img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.info-content h3 {
+    margin: 10px ;
+    background: rgba(255, 255, 255, 0.7); /* Add a semi-transparent white background to make the text more readable */
+    padding: 5px; 
+ 
+}
+.contact-container {
+    display: flex;
+    height: 100%; 
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.second-container {
+    width: 50%;
+    height: 50%;
+    background-color: #f1f1f1; /* Background color for the form */
+    padding: 20px;
+}
+
+.contact-container h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+button[type="submit"] {
+    background-color:rgb(58, 66, 47); /* Button background color */
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
